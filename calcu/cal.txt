@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Loan calculator-KalyanMishra (TutorialsPoint)</title>
+   <style>
+    .Loan_calcualtor{
+       width: 400px;
+       height: 550px;
+       background-color: black;
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       transform: translateX(-50%) translateY(-50%);
+       padding: 20px 0px 0px 100px;
+       border-radius: 10px;
+       color: white;
+    }
+    p{
+       color: white;
+       font-size: 25px;
+       font-family: sans-serif;
+    }
+    h1{
+       color: royalblue;
+    }
+    input{
+       height: 33px;
+       width: 70%;
+       background-color: green;
+       font-size: 20px;
+       color: white;
+       padding: 7px;
+    }
+</head>
+
+<body>
+   <div class="Loan_calcualtor">
+      <h1>Loan Calculator </h1>
+      <p>Loan amount: $
+         <input type="number" id="amount" placeholder="Enter amount..">
+      </p>
+      <p>Rate (Interest): %
+         <input step=".1" id="rate" placeholder="Enter rate..">
+      </p>
+      <p>Months (Time):
+         <input type="number" id="time" placeholder="Enter time..">
+      </p>
+      <input type="button" value="Calculate" id="calculate_op">
+      <p>Total EMI: $
+         <span style="font-weight: 20px; color: white;" id="output"></span>
+      </p>
+   </div>
+</body>
+</html>
